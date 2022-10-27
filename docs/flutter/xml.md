@@ -1,7 +1,8 @@
 ---
 layout: default
 title: XML
-nav_order: 1
+parent: Flutter
+nav_order: 2
 ---
 
 # XML 파싱
@@ -42,7 +43,7 @@ titles
 ```
 
 이런식으로 각 element 사용 가능
-위와 같은 경우 Iterable
+위와 같은 경우 Iterable 임
 
 ```dart
 titles
@@ -50,4 +51,4 @@ titles
     .toList();
 ```
 
-list로 쓰고 싶으면 toList() 하면 됨
+list로 받고 싶으면 toList() 하면 됨
