@@ -35,14 +35,15 @@ final document = XmlDocument.parse(bookshelfXml);
 final titles = document.findAllElements('title');
 ```
 
-title의 elements를 전체에서 다 뽑아냄
+title elements를 전체에서 다 뽑아냄
 
 ```dart
 titles
     .map((node) => node.text);
 ```
 
-이런식으로 각 element 사용 가능
+이런 식으로 각 element 사용 가능
+
 위와 같은 경우 Iterable 임
 
 ```dart
@@ -51,4 +52,4 @@ titles
     .toList();
 ```
 
-list로 받고 싶으면 toList() 하면 됨
+list 로 받고 싶으면 toList() 하면 됨
