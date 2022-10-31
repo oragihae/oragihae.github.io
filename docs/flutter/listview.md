@@ -7,43 +7,64 @@ nav_order: 3
 
 # ListView
 
+- [docs: ListView class](https://api.flutter.dev/flutter/widgets/ListView-class.html)
 - [docs: ListView](https://docs.flutter.dev/development/ui/layout#listview)
 
-그냥 늘 쓰던 ListView 랑 같은거임
+## ListView를 구성하는 4가지 옵션
+
+### 1. 기본 생성자는 children으로 List<Widget> 을 사용
 
 ```dart
-Widget _buildList() {
-  return ListView(
-    children: [
-      _tile('CineArts at the Empire', '85 W Portal Ave', Icons.theaters),
-      _tile('The Castro Theater', '429 Castro St', Icons.theaters),
-      _tile('Alamo Drafthouse Cinema', '2550 Mission St', Icons.theaters),
-      _tile('Roxie Theater', '3117 16th St', Icons.theaters),
-      _tile('United Artists Stonestown Twin', '501 Buckingham Way',
-          Icons.theaters),
-      _tile('AMC Metreon 16', '135 4th St #3000', Icons.theaters),
-      const Divider(),
-      _tile('K\'s Kitchen', '757 Monterey Blvd', Icons.restaurant),
-      _tile('Emmy\'s Restaurant', '1923 Ocean Ave', Icons.restaurant),
-      _tile(
-          'Chaiya Thai Restaurant', '272 Claremont Blvd', Icons.restaurant),
-      _tile('La Ciccia', '291 30th St', Icons.restaurant),
-    ],
-  );
-}
-
-ListTile _tile(String title, String subtitle, IconData icon) {
-  return ListTile(
-    title: Text(title,
-        style: const TextStyle(
-          fontWeight: FontWeight.w500,
-          fontSize: 20,
-        )),
-    subtitle: Text(subtitle),
-    leading: Icon(
-      icon,
-      color: Colors.blue[500],
+ListView(
+  padding: const EdgeInsets.all(8),
+  children: <Widget>[
+    Container(
+      height: 50,
+      color: Colors.amber[600],
+      child: const Center(child: Text('Entry A')),
     ),
-  );
-}
+    Container(
+      height: 50,
+      color: Colors.amber[500],
+      child: const Center(child: Text('Entry B')),
+    ),
+    Container(
+      height: 50,
+      color: Colors.amber[100],
+      child: const Center(child: Text('Entry C')),
+    ),
+  ],
+)
 ```
+
+- children: <Widget>[ ... ] 으로 List를 받음
+- 이런 식의 구현은 하위 children 수가 적어야 함
+- 왜냐하면 모든 child를 구성하기 때문 (보이는 거만 구성한다거나 그런게 아니라)
+
+### 2. ListView.builder 생성자는 요청 시에 child를 빌드하는 IndexedWidgetBuilder를 사용
+
+```dart
+final List<String> entries = <String>['A', 'B', 'C'];
+final List<int> colorCodes = <int>[600, 500, 100];
+
+ListView.builder(
+  padding: const EdgeInsets.all(8),
+  itemCount: entries.length,
+  itemBuilder: (BuildContext context, int index) {
+    return Container(
+      height: 50,
+      color: Colors.amber[colorCodes[index]],
+      child: Center(child: Text('Entry ${entries[index]}')),
+    );
+  }
+);
+```
+
+- child가 많거나 무한인 ListView에 적절함
+- 실제로 보이는 children 만 빌더가 호출되기 때문
+
+실제로는 ListView.builder 를 많이 사용 하는 듯 함
+
+---
+
+나머지 2가지는 필요할 때 정리
