@@ -170,3 +170,37 @@ asset의 컨텍스트 정보 (누가, 무엇을, 언제, 어디서)를 설명
 
 - standard platform 을 사용 할 것
 
+# Accessible design: Patterns
+
+- [docs: Accessible design: Patterns](https://m3.material.io/foundations/accessible-design/patterns)
+
+## Color & contrast
+
+### 명암비
+
+W3C 권장 명암비
+
+| 텍스트 유형                                       | 색상 명암비      |
+|:---------------------------------------------|:------------|
+| 큰 텍스트(14 pt bold/ 18 pt regular and up), 그래픽 | 배경 대비 3:1   |
+| 작은 텍스트                                       | 배경 대비 4.5:1 |
+
+
+### Clustering elements
+
+- 컨테이너 색상과 배경 색상 간의 3:1 대비 비율 충족해야 함
+
+![](../../assets/images/Clustering elements 01.png)
+
+앞에꺼는 버튼이랑 배경 색깔이랑 명암비가 3:1 이하라서 안되고
+
+뒤에꺼는 버튼이랑 배경 색깔이랑 명암비가 3:1 초과해서 안되고
+
+![](../../assets/images/Clustering elements 02.png)
+
+FAB 같은 경우 어차피 따로 떨어져 있어서 잘 보임
+
+그래서 3:1 로 해서는 딱히 이점을 얻지 못함
+
+![](../../assets/images/Clustering elements 03.png)
+
