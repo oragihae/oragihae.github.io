@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Accessible design: Overview
-parent: material_design
+parent: Material Design
 nav_order: 1
 ---
 
