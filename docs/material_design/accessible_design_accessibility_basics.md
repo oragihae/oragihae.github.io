@@ -83,17 +83,49 @@ item의 relative level of importance를 전달하려면:
 
 포커스 포인트와 움직임을 결정하는데 도움이 되도록 다음을 고려
 
-
-
-
+- elements가 포커스를 받는 순서
+- elements가 그룹화되는 방식
+- 포커스가 있는 element가 사라질 때 포커스가 이동하는 위치
+- 시각적 indicators와 접근성 텍스트의 조합을 통해 포커스를 표현할 수 있음
 
 ### Grouping
 
+Group items under headings that communicate what the groupings are and that content is organized spatially.
 
 ### 전환
 
+Continuous focus traversal between screens and tasks improves the user experience, allowing for a return to a previously focused element if a task is interrupted and then resumed.
+
+## Writing
+
+### Accessibility text
+
+### Alternative text (Alt text)
+
+### Captions, adjacent text, and embedded text
+
+- [docs: Captions, adjacent text, and embedded text](https://m3.material.io/foundations/accessible-design/accessibility-basics)
+
+이미지 참고
+
+### Captions
+
+
+
+### Embedded text in images
 
 
 
 
+### Essential and non-essential elements
+
+
+
+
+
+## 접근성 구현
+
+![](../../assets/images/Implementing accessibility.png)
+
+- standard platform 을 사용 할 것
 
