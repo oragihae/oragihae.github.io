@@ -132,25 +132,36 @@ Continuous focus traversal between screens and tasks improves the user experienc
 
 ### Alternative text (Alt text)
 
-### Captions, adjacent text, and embedded text
+Alt text
 
-- [docs: Captions, adjacent text, and embedded text](https://m3.material.io/foundations/accessible-design/accessibility-basics)
+### 캡션, 인접한 텍스트, 임베디드 텍스트
 
-이미지 참고
+![](../../assets/images/Captions, adjacent text, and embedded text.png)
 
-### Captions
+### 캡션
 
+캡션은 asset 밑에 나타내는 텍스트
 
-
-### Embedded text in images
-
-
+asset의 컨텍스트 정보 (누가, 무엇을, 언제, 어디서)를 설명
 
 
-### Essential and non-essential elements
+### 이미지에 포함된 텍스트
+
+스크린 리더는 이미지에 포함된 텍스트를 읽을 수 없음
+
+이 경우 alt text에 필수 정보를 포함
 
 
+### 필수, 비필수 elements
 
+![](../../assets/images/Essential and non-essential elements.png)
+
+1, 2의 경우 필수 요소
+
+3의 경우 비필수 요소
+
+- 필수 정보는 큰 텍스트의 경우 색상 대비 비율이 3:1
+- 작은 텍스트의 경우 4.5:1
 
 
 ## 접근성 구현
