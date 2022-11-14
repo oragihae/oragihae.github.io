@@ -204,3 +204,30 @@ FAB 같은 경우 어차피 따로 떨어져 있어서 잘 보임
 
 ![](../../assets/images/Clustering elements 03.png)
 
+# Accessible design: Design to implementation
+
+- [docs: Accessible design: Design to implementation](https://m3.material.io/foundations/accessible-design/design-to-implementation)
+
+## 접근 가능한 UX 설계 및 구현
+
+## Overview
+
+접근성을 위해 지정해야 하는 product의 3가지 key areas
+
+- 구조
+- 흐름
+- 화면의 elements
+
+
+## Structure: Web Landmarks and headings
+
+
+
+## Flow: Focus order & key traversal
+
+
+
+## Elements
+
+
+
