@@ -8,8 +8,7 @@ nav_order: 2
 
 # Elevation (높이, z축 기준으로 두 surfaces 사이의 상대적인 거리)
 
-![](../../assets/images/Elevation 01.png)
-
+![](../../../assets/images/Elevation 01.png)
 
 왼쪽이 1dp elevation, 오른쪽이 8dp elevation
 
@@ -25,7 +24,7 @@ nav_order: 2
 
 ## What's new
 
-![](../../assets/images/Elevation 02.png)
+![](../../../assets/images/Elevation 02.png)
 
 - 왼쪽 사진: 모든 레벨에 그림자 적용
 - 오른쪽 사진: 그림자 대신 색깔 사용
@@ -38,7 +37,7 @@ nav_order: 2
 
 ### Resting elevation
 
-![](../../assets/images/Resting elevation.png)
+![](../../../assets/images/Resting elevation.png)
 
 - Resting elevation 은 모든 컴포넌트에 기본적으로 주어지는 elevation
 
@@ -50,4 +49,4 @@ nav_order: 2
 
 - components는 user interaction이나 시스템 이벤트에 따라 elevation이 바뀔 수 있음
 
-![](../../assets/images/Applying elevation.png)
+![](../../../assets/images/Applying elevation.png)
