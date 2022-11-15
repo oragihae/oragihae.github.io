@@ -2,7 +2,7 @@
 layout: default
 title: Foundations
 parent: Material Design
-nav_order: 1
+nav_order: 2
 has_children: true
 ---
 
