@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Accessible design
-parent: Material Design
+title: Accessibility
+parent: Foundations
+grand_parent: Material Design
 nav_order: 1
 ---
 
