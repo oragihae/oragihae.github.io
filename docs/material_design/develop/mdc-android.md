@@ -18,7 +18,12 @@ Theme.MaterialComponents.* with Theme.Material3.* for themes
 
 Widget.MaterialComponents.* with Widget.Material3.* for widget styles.
 
-
 ### M3 타이포그래피
 
 ![](../../../assets/images/M3 typescale.png)
+
+## Material Theme Builder
+
+- [Introducing Material Theme Builder](https://material.io/blog/material-theme-builder)
+
+- [Visualize dynamic color](https://m3.material.io/theme-builder#/dynamic)
