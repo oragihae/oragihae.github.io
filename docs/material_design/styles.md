@@ -3,7 +3,7 @@ layout: default
 title: Styles
 parent: Material Design
 nav_order: 2
-has_toc: true
+has_children: true
 ---
 
 # Styles
@@ -80,6 +80,19 @@ has_toc: true
 - components는 user interaction이나 시스템 이벤트에 따라 elevation이 바뀔 수 있음
 
 ![](../../assets/images/Applying elevation.png)
+
+## Icons
+
+
+## Motion
+
+
+
+
+## Shape
+
+
+## Typography
 
 
 
