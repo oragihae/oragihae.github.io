@@ -1,14 +1,13 @@
 ---
 layout: default
-title: Swiperefreshlayout
+title: SwipeRefreshLayout
 parent: Android
 nav_order: 4
 ---
 
-# Swiperefreshlayout
+# SwipeRefreshLayout
 
 - [Adding Swipe-to-Refresh To Your App](https://developer.android.com/develop/ui/views/touch-and-input/swipe/add-swipe-interface)
-
 
 ```xml
 <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
