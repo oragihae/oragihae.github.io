@@ -13,17 +13,8 @@ has_children: true
 
 ## 코틀린 샘플
 
-![](../../assets/images/Android RecyclerView Sample (Kotlin).png)
+![](../../assets/images/FlowersListActivity.png)
 
-샘플 보면 꽃 이미지랑 꽃 이름이 RecyclerView로 구현이 되어 있음
+![](../../assets/images/FlowersAdapter.png)
 
-### FlowersAdapter
-
-```kotlin
-class FlowersAdapter(private val onClick: (Flower) -> Unit) :
-    ListAdapter<Flower, FlowersAdapter.FlowerViewHolder>(FlowerDiffCallback) {
-```
-
-- onClick
-- FlowerDiffCallback
-
+onClick 구현
