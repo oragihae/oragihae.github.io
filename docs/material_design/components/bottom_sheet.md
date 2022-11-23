@@ -88,3 +88,20 @@ bottom sheet 열면 뒤에 까매지는 거
 
 뒤랑 상호작용 불가능
 
+## State
+
+- STATE_COLLAPSED: The bottom sheet is visible but only showing its peek height. This state is usually the 'resting position' of a bottom sheet, and should have enough height to indicate there is extra content for the user to interact with.
+- STATE_EXPANDED: The bottom sheet is visible at its maximum height and it is neither dragging nor settling (see below).
+- STATE_HALF_EXPANDED: The bottom sheet is half-expanded (only applicable if behavior_fitToContents has been set to false), and is neither dragging nor settling (see below).
+- STATE_HIDDEN: 안보이고 프로그래밍 방식으로만 다시 보이게 할 수 있음
+- STATE_DRAGGING: The user is actively dragging the bottom sheet up or down.
+- STATE_SETTLING: The bottom sheet is settling to a specific height after a drag/swipe gesture. This will be the peek height, expanded height, or 0, in case the user action caused the bottom sheet to hide.
+You can set a state on the bottom sheet:
+
+```kotlin
+bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
+```
+
+- 참고: STATE_SETTLING 과 STATE_DRAGGING 는 프로그래밍 방식으로 세팅 불가
+
+
