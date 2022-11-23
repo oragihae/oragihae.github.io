@@ -2,7 +2,6 @@
 layout: default
 title: Theme
 parent: Android
-nav_order: 3
 ---
 
 # Theme

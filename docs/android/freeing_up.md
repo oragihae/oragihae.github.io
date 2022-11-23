@@ -2,7 +2,6 @@
 layout: default
 title: Freeing up 60% of storage for apps
 parent: Android
-nav_order: 2
 ---
 
 # Freeing up 60% of storage for apps

@@ -2,7 +2,6 @@
 layout: default
 title: SwipeRefreshLayout
 parent: Android
-nav_order: 4
 ---
 
 # SwipeRefreshLayout

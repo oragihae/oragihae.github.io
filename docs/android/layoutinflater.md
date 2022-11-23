@@ -2,7 +2,6 @@
 layout: default
 title: LayoutInflater
 parent: Android
-nav_order: 7
 ---
 
 # LayoutInflater

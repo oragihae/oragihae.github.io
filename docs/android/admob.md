@@ -2,7 +2,6 @@
 layout: default
 title: AdMob
 parent: Android
-nav_order: 5
 ---
 
 # AdMob
