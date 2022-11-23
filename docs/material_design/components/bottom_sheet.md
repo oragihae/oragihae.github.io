@@ -19,5 +19,18 @@ nav_order: 4
 
 ![](../../../assets/images/Bottom sheets 00.png)
 
-
 > 아직 문서 작성 중인 듯
+
+## Standard bottom sheet
+
+bottom sheet 열어도 뒤는 그대로
+
+뒤랑 상호작용 가능
+
+
+## Modal bottom sheet
+
+bottom sheet 열면 뒤에 까매지는 거
+
+뒤랑 상호작용 불가능
+
