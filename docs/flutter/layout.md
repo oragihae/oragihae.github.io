@@ -39,7 +39,16 @@ const Center(
 
 build() 메소드 안에서 위젯을 인스턴스화하고 반환하면 위젯이 표시됨
 
+## Standard 위젯
 
+- Container : 패딩, 마진, 테두리, 배경색, 기타 데코레이션을 위젯에 추가
+- GridView : 위젯을 스크롤 가능한 그리드로 배치
+- ListView : 위젯을 스크롤 가능한 리스트로 배치
+- Stack : 위젯을 다른 위젯 위에 겹침
 
+## Material 위젯
 
+- Card : 걍 카드임
+- ListTile : Organizes up to 3 lines of text, and optional leading and trailing icons, into a row.
 
+![](../../assets/images/ListTile.png)
