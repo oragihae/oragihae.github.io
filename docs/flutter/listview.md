@@ -12,7 +12,7 @@ nav_order: 3
 
 ## ListView를 구성하는 4가지 옵션
 
-### 1. 기본 생성자는 children으로 List<Widget> 을 사용
+### 1. 기본 생성자는 children으로 List\<Widget> 을 사용
 
 ```dart
 ListView(
@@ -37,7 +37,7 @@ ListView(
 )
 ```
 
-- children: <Widget>[ ... ] 으로 List를 받음
+- children: \<Widget>[ ... ] 으로 List를 받음
 - 이런 식의 구현은 하위 children 수가 적어야 함
 - 왜냐하면 모든 child를 구성하기 때문 (보이는 거만 구성한다거나 그런게 아니라)
 
