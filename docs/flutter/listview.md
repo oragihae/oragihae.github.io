@@ -68,3 +68,44 @@ ListView.builder(
 ---
 
 나머지 2가지는 필요할 때 정리
+
+---
+
+## Child elements의 생명주기
+
+### 생성
+
+### 파기
+
+child가 스크롤 되서 뷰 밖으로 나가면 연결된 subtree, states, 렌더링 객체가 destroy
+
+다시 스크롤 되서 필요해지면 lazily 하게 재생성됨
+
+### 파기 완화 (Destruction mitigation)
+
+스크롤 되서 뷰 밖으로 나가도 state 보존하는 방법
+
+> 필요할 때 읽기
+
+
+---
+
+## IndexedWidgetBuilder itemBuilder
+
+- [docs: IndexedWidgetBuilder](https://api.flutter.dev/flutter/widgets/IndexedWidgetBuilder.html)
+
+```dart
+IndexedWidgetBuilder = Widget Function(
+    BuildContext context,
+    int index
+)
+```
+
+
+
+
+
+
+
+
+
