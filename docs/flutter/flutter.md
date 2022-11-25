@@ -11,4 +11,7 @@ permalink: /docs/flutter
 ## 코드랩
 
 1. [Write your first Flutter app, part 1](https://codelabs.developers.google.com/codelabs/first-flutter-app-pt1#0)
+2. [Write Your First Flutter App, part 2](https://codelabs.developers.google.com/codelabs/first-flutter-app-pt2#0)
+
+
 
