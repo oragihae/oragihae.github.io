@@ -30,3 +30,9 @@ x = {100: 'hundred', False: 0, 3.5: [3.5, 3.5]}
 
 - key, value 다양한 값 사용 가능
 - 특히, list
+
+```python
+for k, v in day_dict.items():
+```
+
+- items()로 key, value for 문
