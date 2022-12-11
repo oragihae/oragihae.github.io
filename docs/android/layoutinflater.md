@@ -14,7 +14,7 @@ parent: Android
 
 inflate 메소드가 여러 개 인데 그 중 하나 가져옴
 
-```python
+```kotlin
 open fun inflate(
     resource: Int, 
     root: ViewGroup?, 
