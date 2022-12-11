@@ -1,12 +1,12 @@
 ---
 layout: default
 title: M3 Typography
-parent: Material Design
+parent: Android
 ---
 
 # M3 Typography
 
-![](../../assets/images/M3 typescale.png)
+![](../../assets/images/M3%20typescale.png)
 
 ```xml
 <TextView
