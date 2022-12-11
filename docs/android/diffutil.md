@@ -1,8 +1,7 @@
 ---
 layout: default
 title: DiffUtil
-parent: RecyclerView
-grand_parent: Android
+parent: Android
 ---
 
 # DiffUtil
