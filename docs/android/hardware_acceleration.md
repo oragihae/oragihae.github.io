@@ -17,9 +17,11 @@ parent: Android
 
 - 하드웨어 가속화는 타겟 API 레벨이 14 이상이면 기본적으로 활성화 됨
 - 물론 명시적으로 비활성화 할 수도 있음
-- If your application uses only standard views and Drawables, turning it on globally should not cause any adverse drawing effects. 
-- However, because hardware acceleration is not supported for all of the 2D drawing operations, turning it on might affect some of your custom views or drawing calls. 
-- Problems usually manifest themselves as invisible elements, exceptions, or wrongly rendered pixels. To remedy this, Android gives you the option to enable or disable hardware acceleration at multiple levels. See Control hardware acceleration.
+- 만약 application이 표준 view와 Drawables 만 사용한다면 turning it on globally should not cause any adverse drawing effects. 
+- 하지만 하드웨어 가속화는 모든 2D 드로잉 작업을 서포팅하지 않으므로 커스텀한 뷰나 드로잉 호출에 영향을 줄 수 있음
+- Problems usually manifest themselves as invisible elements, exceptions, or wrongly rendered pixels. 
+- To remedy this, Android gives you the option to enable or disable hardware acceleration at multiple levels.
+- [Control hardware acceleration](https://developer.android.com/topic/performance/hardware-accel#controlling) 참고
 
 
 - If your application performs custom drawing, test your application on actual hardware devices with hardware acceleration turned on to find any problems. 
