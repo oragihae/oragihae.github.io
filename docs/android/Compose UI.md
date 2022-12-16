@@ -18,7 +18,7 @@ parent: Android
 - 제약 조건은 linkTo() 또는 다른 유용한 메서드를 사용하여 지정됨
 - parent는 ConstraintLayout 컴포저블 자체에 대한 제약 조건을 지정하는 데 사용할 수 있는 기존 참조
 
-```koltin
+```kotlin
 @Composable
 fun ConstraintLayoutContent() {
     ConstraintLayout {
@@ -43,7 +43,6 @@ fun ConstraintLayoutContent() {
         })
     }
 }
-
 ```
 
 ## Lists and grids
