@@ -6,7 +6,6 @@ parent: Android
 
 # Theme
 
-
 ## DayNight 테마
 
 - 어두운 테마
