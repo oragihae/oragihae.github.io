@@ -1,10 +1,10 @@
 ---
 layout: default
-title: When should I use Android Jetpack Compose Surface composable?
+title: Compose Surface
 parent: Android
 ---
 
-# When should I use Android Jetpack Compose Surface composable?
+# Compose Surface
 
 - [docs](https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary#Surface(androidx.compose.ui.Modifier,androidx.compose.ui.graphics.Shape,androidx.compose.ui.graphics.Color,androidx.compose.ui.graphics.Color,androidx.compose.foundation.BorderStroke,androidx.compose.ui.unit.Dp,kotlin.Function0))
 
