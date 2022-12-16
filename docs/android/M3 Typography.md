@@ -6,7 +6,7 @@ parent: Android
 
 # M3 Typography
 
-![](../../assets/images/M3%20typescale.png)
+![](../../assets/images/M3 typescale.png)
 
 ```xml
 <TextView
