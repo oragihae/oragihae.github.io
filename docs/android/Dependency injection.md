@@ -135,6 +135,75 @@ Hilt는 Dagger가 제공하는 컴파일 시간 정확성, 런타임 성능, 확
 
 # Hilt를 사용한 종속 항목 삽입
 
+Hilt는 프로젝트에서 종속 항목 수동 삽입을 실행하는 상용구를 줄이는 안드로이드용 종속 항목 삽입 라이브러리
+
+Hilt는 프로젝트의 모든 안드로이드 클래스에 컨테이너를 제공하고 수명 주기를 자동으로 관리함으로써 어플리케이션에서 DI를 사용하는 표준 방법을 제공
+
+Hilt은 Dagger가 제공하는 컴파일 시간 정확성, 런타임 성능, 확장성 및 안드로이드 스튜디오 지원의 이점을 누리기 위해 인기 있는 DI 라이브러리인 Dagger를 기반으로 빌드됨
+
+
+## Hilt 어플리케이션 클래스
+
+```kotlin
+@HiltAndroidApp
+class ExampleApplication : Application() { ... }
+```
+
+- Hilt를 사용하는 모든 앱은 @HiltAndroidApp으로 주석이 지정된 Application 클래스를 포함해야 함 
+- 이 Hilt 구성요소는 Application 객체의 수명 주기에 연결되며 이와 관련한 종속 항목을 제공함
+- 이는 앱의 상위 구성요소이므로 다른 구성요소는 이 상위 구성요소에서 제공하는 종속 항목에 액세스 할 수 있음
+
+## Android 클래스에 종속 항목 삽입
+
+```kotlin
+@AndroidEntryPoint
+class ExampleActivity : AppCompatActivity() { ... }
+```
+
+- Application 클래스에 Hilt를 설정하고 애플리케이션 수준 구성요소를 사용할 수 있게 되면 Hilt는 @AndroidEntryPoint 주석이 있는 다른 안드로이드 클래스에 종속 항목을 제공할 수 있음
+
+Hilt는 현재 다음 안드로이드 클래스를 지원
+
+- Application (@HiltAndroidApp 사용)
+- ViewModel (@HiltViewModel 사용)
+- Activity
+- Fragment
+- View
+- Service
+- BroadcastReceiver
+
+안드로이드 클래스에 @AndroidEntryPoint로 주석을 지정하면 이 클래스에 종속된 안드로이드 클래스에도 주석을 지정해야 함
+
+예를 들면 Fragment에 주석을 지정하면 이 Fragment를 사용하는 Activity에도 주석을 지정해야 함
+
+
+> 참고
+> Android 클래스에 관한 Hilt 지원에는 다음과 같은 예외가 적용됩니다.
+> Hilt는 AppCompatActivity와 같은 ComponentActivity를 확장하는 활동만 지원합니다.
+> Hilt는 androidx.Fragment를 확장하는 프래그먼트만 지원합니다.
+> Hilt는 보존된 프래그먼트를 지원하지 않습니다.
+
+```kotlin
+@AndroidEntryPoint
+class ExampleActivity : AppCompatActivity() {
+
+  @Inject lateinit var analytics: AnalyticsAdapter
+  ...
+}
+```
+
+구성요소에서 종속 항목을 가져오려면 위 코드와 같이 @Inject 주석을 사용하여 필드 삽입을 실행
+
+## Hilt 결합 정의
+
+```kotlin
+class AnalyticsAdapter @Inject constructor(
+  private val service: AnalyticsService
+) { ... }
+```
+
+## Hilt 모듈
+
 
 
 
